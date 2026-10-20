@@ -1,0 +1,27 @@
+//Dynamic  Array of Associative Arrays: it means a dynamic array where each element is itself an associative array. 
+//that associative elements contains with separate kays and values.
+
+module tb;
+  int arr[][int];
+  initial begin
+    arr=new[2];
+    arr[0][10]=9;
+    arr[0][20]=90;
+    
+    arr[1][30]=89;
+    arr[1][40]=98;
+    
+    $display("%d",arr[0][10]);
+    $display("%d",arr[0][20]);
+    $display("%d",arr[1][30]);
+    $display("%d",arr[1][40]);
+    
+  end
+endmodule
+
+
+output:
+9
+90
+89
+98
